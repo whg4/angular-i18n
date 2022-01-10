@@ -16,6 +16,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "zh",
+        "locales": {
+          "en": "src/locales/messages.en.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -83,7 +89,9 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-i18n:build"
+            "browserTarget": "angular-i18n:build",
+            "outputPath": "src/locale",
+            "format": "xlf2"
           }
         },
         "test": {

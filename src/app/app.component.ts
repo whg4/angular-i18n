@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-i18n';
+  money = 10;
+  today = new Date();
+  number = 123456789.123456789;
+  percent = .9111;
 }

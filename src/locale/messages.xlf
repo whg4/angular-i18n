@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="zh">
+  <file id="ngi18n" original="ng.template">
+    <unit id="1921095194920742775">
+      <notes>
+        <note category="location">src/app/app.component.html:1</note>
+      </notes>
+      <segment>
+        <source>hello world</source>
+      </segment>
+    </unit>
+    <unit id="1083375751822595111">
+      <notes>
+        <note category="location">src/app/app.component.html:2</note>
+      </notes>
+      <segment>
+        <source>你好</source>
+      </segment>
+    </unit>
+  </file>
+</xliff>
