@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="zh">
   <file id="ngi18n" original="ng.template">
-    <unit id="1083375751822595111">
+    <unit id="helloworld">
       <notes>
-        <note category="location">src/app/app.component.html:1</note>
+        <note category="location">src/app/app.component.html:12</note>
+        <note category="description">A greeting</note>
+        <note category="meaning">Greeting</note>
       </notes>
       <segment>
-        <source>你好</source>
-        <target>hello</target>
+        <source>你好~</source>
+        <target>Greeting~</target>
       </segment>
     </unit>
   </file>

@@ -1,0 +1,28 @@
+<h1>2 准备翻译组件</h1>
+<p>要准备翻译项目，请完成以下操作。</p>
+<ul>
+  <li>使用 i18n 属性标记组件模板中的文本</li>
+  <li>使用 i18n- 属性在组件模板中标记属性文本字符串</li>
+  <li>使用带 $localize 标记的消息字符串标记组件代码中的文本字符串</li>
+</ul>
+<h2>2.1 在组件模板中标记文本</h2>
+<p class="highlight">语法：{{ p1 }}</p>
+<p class="highlight">i18n_metadata= meaning|description@@custom_id </p>
+<p class="highlight">meaning: 提供文本在特定上下文中的含义或意图</p>
+<p class="highlight">description: 提供额外的信息或背景</p>
+<p class="highlight">custom_id: 提供自定义标识符</p>
+<h3>示例：</h3>
+<p i18n="Greeting|A greeting@@helloworld">你好~</p>
+
+<h2>2.2 标记翻译的元素属性</h2>
+<p class="highlight">语法：{{ p2 }}</p>
+<h3>示例：</h3>
+<p title="提示" i18n-title>这是元素属性示例</p>
+
+<h3>2.3 在组件代码中标记文本</h3>
+<p class="highlight">语法：{{ p3 }}</p>
+<h3>示例：</h3>
+<p>{{ str }}</p>
+
+<h3>2.4 包含插值的文本</h3>
+
