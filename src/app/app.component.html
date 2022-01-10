@@ -1,0 +1,17 @@
+<h1>1.根据语言环境格式化数据</h1>
+<div class="currency">
+  <h5>1.1 货币：{{ 'money | currency' }}</h5>
+  <p>{{ money | currency:'RMB' }}</p>
+</div>
+<div class="time">
+  <h5>1.2 时间：{{ 'today | date' }}</h5>
+  <p>{{ today | date }}</p>
+</div>
+<div class="number">
+  <h5>1.3 数字： {{ "number | number:'1.0-3'" }}</h5>
+  <p>{{ number | number:'1.0-3' }}</p>
+</div>
+<div class="percent">
+  <h5>1.4 百分数：{{ "percent | percent:1.0-2" }}</h5>
+  <p>{{ percent | percent:'1.0-2' }}</p>
+</div>
