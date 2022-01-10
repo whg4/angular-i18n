@@ -16,10 +16,17 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "zh",
+        "locales": {
+          "en": "src/locale/messages.en.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": false,
             "outputPath": "dist/angular-i18n",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -64,6 +71,10 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "localize": ["en"],
+              "baseHref": "/en/"
             }
           },
           "defaultConfiguration": "production"
@@ -76,6 +87,9 @@
             },
             "development": {
               "browserTarget": "angular-i18n:build:development"
+            },
+            "en": {
+              "browserTarget": "angular-i18n:build:en"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +97,9 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-i18n:build"
+            "browserTarget": "angular-i18n:build",
+            "outputPath": "src/locale",
+            "format": "xlf2"
           }
         },
         "test": {
