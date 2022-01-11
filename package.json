@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "extract-i18n": "ng run angular-i18n:extract-i18n",
-    "angular-i18n:en": "ng serve angular-i18n --configuration en"
+    "extract": "ng run angular-i18n:extract-i18n",
+    "i18n:en": "ng serve angular-i18n --configuration en"
   },
   "private": true,
   "dependencies": {

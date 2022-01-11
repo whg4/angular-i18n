@@ -19,10 +19,20 @@
 <h3>示例：</h3>
 <p title="提示" i18n-title>这是元素属性示例</p>
 
-<h3>2.3 在组件代码中标记文本</h3>
+<h2>2.3 在组件代码中标记文本</h2>
 <p class="highlight">语法：{{ p3 }}</p>
 <h3>示例：</h3>
 <p>{{ str }}</p>
 
-<h3>2.4 包含插值的文本</h3>
+<h2>2.4 包含插值的文本</h2>
+<p class="highlight">模板中插值: {{p4}} </p>
+<h3>示例:</h3>
+<p i18n>我是{{ name }}</p>
+<h3>组件中代码插值示例：</h3>
+<p>{{str1}}</p>
 
+<h2>ICU表达式：</h2>
+<p class="highlight">语法：{{p5}}</p>
+<p class="highlight">{{ p6 }}</p>
+<h3>示例：</h3>
+<p i18n>{type, select, ADD{添加} EDIT{编辑}}</p>

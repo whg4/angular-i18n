@@ -1,27 +1,20 @@
-# AngularI18n
+# 国际化主要流程
+1.添加国际化包
+ng add @angular/localize
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+2.通过ID引用语言环境
+主要在angular.json中配置源语言及要生成的目标语言
+"i18n": {
+	"sourceLocale": "zh",
+	"locales": {
+		"en": "src/locale/messages.en.xlf"
+	}
+}
 
-## Development server
+3.标记代码中要翻译的文案
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+4.执行ng extract-i18n命令提取翻译文案生成messages.xlf文件
 
-## Code scaffolding
+5.根据messages.xlf文件生成其他语言版本的xlf文件
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+6.执行ng build --localize构建多个语言版本代码

@@ -3,12 +3,52 @@
   <file id="ngi18n" original="ng.template">
     <unit id="helloworld">
       <notes>
-        <note category="location">src/app/app.component.html:12</note>
+        <note category="location">src/app/app.component.html:15</note>
         <note category="description">A greeting</note>
         <note category="meaning">Greeting</note>
       </notes>
       <segment>
         <source>你好~</source>
+      </segment>
+    </unit>
+    <unit id="2714523871337169162">
+      <notes>
+        <note category="location">src/app/app.component.html:20</note>
+      </notes>
+      <segment>
+        <source>提示</source>
+      </segment>
+    </unit>
+    <unit id="2012421645436826531">
+      <notes>
+        <note category="location">src/app/app.component.html:30</note>
+      </notes>
+      <segment>
+        <source>我是<ph id="0" equiv="INTERPOLATION" disp="{{ name }}"/></source>
+      </segment>
+    </unit>
+    <unit id="828521660444489046">
+      <notes>
+        <note category="location">src/app/app.component.html:38</note>
+      </notes>
+      <segment>
+        <source>{VAR_SELECT, select, ADD {添加} EDIT {编辑}}</source>
+      </segment>
+    </unit>
+    <unit id="542309476431636887">
+      <notes>
+        <note category="location">src/app/app.component.ts:18</note>
+      </notes>
+      <segment>
+        <source>组件中的字符串</source>
+      </segment>
+    </unit>
+    <unit id="8175589756312282157">
+      <notes>
+        <note category="location">src/app/app.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>我是<ph id="0" equiv="PH" disp="this.name"/></source>
       </segment>
     </unit>
   </file>
