@@ -1,15 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="zh">
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="zh" trgLang="en">
   <file id="ngi18n" original="ng.template">
     <unit id="helloworld">
       <notes>
-        <note category="location">src/app/app.component.html:12</note>
+        <note category="location">src/app/app.component.html:3</note>
         <note category="description">A greeting</note>
         <note category="meaning">Greeting</note>
       </notes>
       <segment>
         <source>你好~</source>
-        <target>Greeting~</target>
+<target>Hello~</target>
+      </segment>
+    </unit>
+    <unit id="2828841229048136325">
+      <notes>
+        <note category="location">src/app/app.component.html:4</note>
+      </notes>
+      <segment>
+        <source>你好~</source>
+<target>Hello~</target>
+      </segment>
+    </unit>
+    <unit id="2714523871337169162">
+      <notes>
+        <note category="location">src/app/app.component.html:8</note>
+      </notes>
+      <segment>
+        <source>提示</source>
+<target>Tips</target>
+      </segment>
+    </unit>
+    <unit id="2012421645436826531">
+      <notes>
+        <note category="location">src/app/app.component.html:16</note>
+      </notes>
+      <segment>
+        <source>我是<ph id="0" equiv="INTERPOLATION" disp="{{ name }}"/></source>
+<target>I am <ph id="0" equiv="INTERPOLATION" disp="{{ name }}"/></target>
+      </segment>
+    </unit>
+    <unit id="828521660444489046">
+      <notes>
+        <note category="location">src/app/app.component.html:26</note>
+      </notes>
+      <segment>
+        <source>{VAR_SELECT, select, ADD {添加} EDIT {编辑}}</source>
+<target>{VAR_SELECT, select, ADD {Add} EDIT {Edit}}</target>
+      </segment>
+    </unit>
+    <unit id="5761794863893280201">
+      <notes>
+        <note category="location">src/app/app.component.ts:10</note>
+        <note category="description">a test12341234</note>
+        <note category="meaning">test</note>
+      </notes>
+      <segment>
+        <source>组件中的字符串</source>
+<target>Componet&apos;s string</target>
+      </segment>
+    </unit>
+    <unit id="8175589756312282157">
+      <notes>
+        <note category="location">src/app/app.component.ts:11</note>
+        <note category="location">src/app/app.component.ts:13</note>
+      </notes>
+      <segment>
+        <source>我是<ph id="0" equiv="PH" disp="this.name"/></source>
+<target>I am <ph id="0" equiv="PH" disp="this.name"/></target>
       </segment>
     </unit>
   </file>

@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "extract": "ng run angular-i18n:extract-i18n",
-    "i18n:en": "ng serve angular-i18n --configuration en"
+    "i18n:en": "ng serve angular-i18n --configuration en",
+    "i18n-replace": "npm run extract && node ./translation/index.js"
   },
   "private": true,
   "dependencies": {
@@ -28,14 +29,17 @@
     "@angular-devkit/build-angular": "~13.1.2",
     "@angular/cli": "~13.1.2",
     "@angular/compiler-cli": "~13.1.0",
+    "@angular/localize": "^13.1.1",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "html-entities": "^2.3.2",
     "jasmine-core": "~3.10.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.5.2"
+    "typescript": "~4.5.2",
+    "xlsx": "^0.17.5"
   }
 }
